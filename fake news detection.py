@@ -247,7 +247,7 @@ DT.score(xv_test, y_test)
 print(classification_report(y_test, pred_dt))
 
 
-# In[ ]:
+# In[39]:
 
 
 from sklearn.ensemble import GradientBoostingClassifier
@@ -256,25 +256,25 @@ GBC = GradientBoostingClassifier(random_state=0)
 GBC.fit(xv_train, y_train)
 
 
-# In[ ]:
+# In[40]:
 
 
 pred_gbc = GBC.predict(xv_test)
 
 
-# In[ ]:
+# In[41]:
 
 
 GBC.score(xv_test, y_test)
 
 
-# In[ ]:
+# In[42]:
 
 
 print(classification_report(y_test, pred_gbc))
 
 
-# In[ ]:
+# In[43]:
 
 
 from sklearn.ensemble import RandomForestClassifier
@@ -283,25 +283,25 @@ RFC = RandomForestClassifier(random_state=0)
 RFC.fit(xv_train, y_train)
 
 
-# In[ ]:
+# In[44]:
 
 
 pred_rfc = RFC.predict(xv_test)
 
 
-# In[ ]:
+# In[45]:
 
 
 RFC.score(xv_test, y_test)
 
 
-# In[ ]:
+# In[46]:
 
 
 print(classification_report(y_test, pred_rfc))
 
 
-# In[ ]:
+# In[47]:
 
 
 def output_lable(n):
@@ -326,21 +326,21 @@ def manual_testing(news):
                                                                                                               output_lable(pred_RFC[0])))
 
 
-# In[ ]:
+# In[48]:
 
 
 news = str(input())
 manual_testing(news)
 
 
-# In[ ]:
+# In[49]:
 
 
 news = str(input())
 manual_testing(news)
 
 
-# In[ ]:
+# In[50]:
 
 
 news = str(input())
